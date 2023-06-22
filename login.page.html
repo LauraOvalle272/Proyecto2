@@ -1,0 +1,26 @@
+<ion-content class="fondo">
+  <ion-grid class="margen">
+    <ion-row>
+      <p class="saludo">¡Bienvenido!</p>
+    </ion-row>
+  <ion-card class="login">
+    <ion-card-header>
+      <br>
+      <ion-card-title>Iniciar Sesión</ion-card-title>
+    </ion-card-header>
+    <br>
+    <form [formGroup]="formularioLogin">
+    <ion-card-content>
+      <ion-item>
+        <ion-input placeholder="Correo" formControlName="correo" type="email"></ion-input>
+      </ion-item>
+  <br>
+  <ion-item>
+    <ion-input placeholder="Contraseña" formControlName="contrasena" type="password"></ion-input>
+  </ion-item>
+  <br>
+  <ion-button (click)="goToHome()" expand="block" >Ingresar</ion-button>
+    </ion-card-content>
+  
+
+
